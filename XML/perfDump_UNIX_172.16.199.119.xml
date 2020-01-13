@@ -1,0 +1,1 @@
+<QSMServer_PerformanceDataReq  memoryTotal="8365268992" memoryUsed="745455616" memoryFree="7619813376" IpAddress="172.16.199.119" ping="1" clientName="172.16.199.119"><NetworkInfo/><UserInfo/><MemoryInfo/><AVDetails/><CPUUtilization><CPUUtilization  CPUNum="1" CPUUtilization="3"/></CPUUtilization></QSMServer_PerformanceDataReq>

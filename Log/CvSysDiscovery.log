@@ -1,0 +1,81 @@
+***********************************************************************************************
+* Machine    : [Unknown Client]:[Unknown Host] ([Unknown Physical Host]) ([Unknown Instance]) *
+* IP Addrs   : [Unknown]                                                                      *
+* Module     : CvSysDiscovery                                                                 *
+* Commserver : [Unknown CS Client]:[Unknown CS Host]                                          *
+* Version    : [Unknown]                                                                      *
+* Date       : 2019/07/12 (India Standard Time GMT+05:30)                                     *
+* OS Type    : [Unknown]                                                                      *
+***********************************************************************************************
+
+0     1114  07/12 15:24:38 ### RemoteDataCollectionWithManualList(4330) - +++ Version=C:\Users\RSEETH~1\AppData\Local\Temp\7zS18DD.tmp\CVSysDiscoveryUI.exe (Windows:x64, F=11.80.70.28569, P=11.0.0.0, PB=10.2017.0130.1503-UPDB11-2)
+0     1114  07/12 15:24:38 ### RemoteDataCollectionWithManualList2(4023) - +++ 
+0     1114  07/12 15:24:38 ### InitializeRemoteDiscovery(4827) - +++ 
+0     1114  07/12 15:24:38 ### FXUAC::IsUACEnabled(86) - UAC is enabled
+0     1114  07/12 15:24:38 ### InitializeRemoteDiscovery(4827) - --- 0:00.014575 
+0     1114  07/12 15:24:38 ### RemoteDataCollectionWithManualList2(4083) - Automatic Manual Discovery options
+0     1114  07/12 15:24:38 ### RemoteDataCollectionWithManualList2(4084) - User [cand], OS [605], collect performance data [False]
+0     1114  07/12 15:24:38 ### RemoteDataCollectionWithManualList2(4087) - File level data collection Filters
+0     1114  07/12 15:24:38 ### RemoteDataCollectionWithManualList2(4089) - File Extension filters [], Last Modified time [0] days, Files larger than [0] KB, Collect owner user [True]
+0     1114  07/12 15:24:38 ### RemoteDataCollectionWithManualList2(4218) - ClientName=172.16.199.119
+0     1114  07/12 15:24:38 ### RemoteDataCollectionWithManualList2(4275) - Setting remote DC to true
+0     1114  07/12 15:24:38 ### SRAGLSystem::Process(474) - +++ 
+0     1114  07/12 15:24:38 ### SRAGLSystem::Process(567) - Launching DoDiscoveryRemoteUnix, Client=172.16.199.119, ClientInfo=0x000000001FF319B0
+0     62c   07/12 15:24:38 ### DoDiscoveryRemoteUnix(1480) - +++ 
+0     1114  07/12 15:24:38 ### SRAGLSystem::Process(694) - TotalClients=1, CompletedClients=0, Percentage=0.0%
+0     62c   07/12 15:24:40 ### AGLClientInfo::populateUnixOSInfo(148) - Operating system of the client is Linux
+0     62c   07/12 15:24:40 ### AGLClientInfo::populateUnixOSInfo(224) - Client [172.16.199.119]: OS=Linux, OSVersion=3.10.0-229.el7.x86_64, CPUType=x86_64
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: #!/bin/sh
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: cd /tmp/; 
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: if [ "$(uname)" = "HP-UX" ] ; 
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: then 
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: export PATH=$PATH:/usr/contrib/bin; 
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: fi; 
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: gunzip /tmp/cv_sdt_bin.tar.gz;tar -xvf cv_sdt_bin.tar; cd cv_sdt_bin; 
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: GALAXY_VM="Instance001"; export GALAXY_VM; 
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: GALAXY_INST="Instance001"; export GALAXY_INST; 
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: chmod 777 /tmp/cv_sdt_bin/*; 
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1553) - RemoteCommand: /tmp/cv_sdt_bin/CVAGLFileScan -path out -machine 172.16.199.119 -collectUserInfo -loglevel 1
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1564) - x86_64
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1615) - copy.bat cand (PASSWORD-REMOVED) 172.16.199.119 Unix\LINUX64 "C:\System Discovery\CVSystemDiscovery132073988782024166\XML"
+0     62c   07/12 15:24:40 ### DoDiscoveryRemoteUnix(1645) - Spawned process to collect remote data, ProcessId=17100
+0     62c   07/12 15:24:40 ### DoDiscoveryBase(2583) - +++ 
+0     62c   07/12 15:24:40 ### DoDiscoveryBase(2588) - Client=172.16.199.119, ClientInfo=0x000000001FF319B0, Remote=1
+0     62c   07/12 15:24:42 ### AGLClientInfo::populateUnixOSInfo(148) - Operating system of the client is Linux
+0     62c   07/12 15:24:42 ### AGLClientInfo::populateUnixOSInfo(224) - Client [172.16.199.119]: OS=Linux, OSVersion=3.10.0-229.el7.x86_64, CPUType=x86_64
+0     62c   07/12 15:24:42 ### DoDiscoveryBase(2686) - Starting Discovery, Client=172.16.199.119, AppType=605
+0     62c   07/12 15:24:43 ### DiscoverBaseUnixClient(3017) - Processor count 4
+0     62c   07/12 15:24:54 ### DiscoverBaseUnixClient(3148) - glibc version of the client is glibc-2.17-157.el7_3.1.x86_64
+0     62c   07/12 15:24:54 ### SRUXStorage::doDiscovery(7733) - discovery option [1]
+0     62c   07/12 15:24:54 ### SRUXStorage::process(5946) - +++ 
+0     62c   07/12 15:24:54 ### SRUXStorage::scanDisks(480) - scanning disks
+0     62c   07/12 15:24:54 ### LinuxDiskDataProvider::scan(466) - Start
+0     62c   07/12 15:24:55 ### LinuxDiskDataProvider::scan(485) - releaseFileContent []
+0     62c   07/12 15:24:57 ### CommandHelper::ExecuteCommand(365) - Command [/sbin/fdisk -l] output is empty or no permission, Trying with sudo
+0     62c   07/12 15:24:59 ### LinuxDiskDataProvider::scan(815) - Command [/sbin/fdisk -l] output [
+] is empty
+0     62c   07/12 15:24:59 ### SRUXStorage::scanDisks(483) - Disk data provider SCAN Failed
+0     62c   07/12 15:24:59 ### SRUXStorage::process(5958) - Failed to collect disk info
+0     62c   07/12 15:24:59 ### SRUXStorage::process(5946) - --- 0:05.045093 
+0     62c   07/12 15:24:59 ### SRUXStorage::toXML(5915) - Failed to process SRM info
+0     62c   07/12 15:24:59 ### SRUXStorage::doDiscovery(7740) - Failed to get storage data
+0     62c   07/12 15:24:59 ### DiscoverBaseUnixClient(3179) - Storage XML out []
+0     62c   07/12 15:24:59 ### SRUXStorage::processPerformanceData(8159) - process performance data started
+0     62c   07/12 15:25:02 ### SRUXStorage::processPerformanceData(8222) - CPU Idle position value [97]
+0     62c   07/12 15:25:04 ### SRUXStorage::processPerformanceData(8326) - memory total [8365268992], memory used [745455616]
+0     62c   07/12 15:25:04 ### SRUXStorage::processPerformanceData(8460) - Process performance data completed
+0     62c   07/12 15:25:04 ### DoDiscoveryBase(2583) - --- 0:23.939479 
+0     62c   07/12 15:25:04 ### DoDiscoveryRemoteUnix(1656) - Waiting up to 720.000000 minutes for remote process to complete
+0     62c   07/12 15:25:04 ### DoDiscoveryRemoteUnix(1680) - Exit code of FLA for client 172.16.199.119 is 255
+0     62c   07/12 15:25:04 ### DoDiscoveryRemoteUnix(1688) - Copying logs from client [172.16.199.119] to C:\System Discovery\CVSystemDiscovery132073988782024166\Logs
+0     62c   07/12 15:25:05 ### DoDiscoveryRemoteUnix(1724) - Failed copying logs, result=1, error=[5] Access is denied.
+0     62c   07/12 15:25:05 ### DoDiscoveryRemoteUnix(1739) - Copying FLA file from client [172.16.199.119] to C:\System Discovery\CVSystemDiscovery132073988782024166\XML
+0     62c   07/12 15:25:06 ### DoDiscoveryRemoteUnix(1775) - Failed copying FLA file, result=1, error=[5] Access is denied.
+0     62c   07/12 15:25:06 ### DoDiscoveryRemoteUnix(1799) - Error, exit code of process is [4294967294], File level data collection failed
+0     62c   07/12 15:25:07 ### DoDiscoveryRemoteUnix(1480) - --- 0:29.506643 
+0     1114  07/12 15:25:07 ### SRAGLSystem::Process(474) - --- 0:29.646435 
+0     1114  07/12 15:25:07 ### AddStatusToDiscoverySummaryFile(145) - +++ 
+0     1114  07/12 15:25:08 ### AddStatusToDiscoverySummaryFile(254) - Status=172.16.199.119: Failed: Data Collection failed, User may not have permission; File level data collection failed
+0     1114  07/12 15:25:08 ### AddStatusToDiscoverySummaryFile(145) - --- 0:00.002387 
+0     1114  07/12 15:25:08 ### RemoteDataCollectionWithManualList2(4023) - --- 0:29.670300 
+0     1114  07/12 15:25:08 ### RemoteDataCollectionWithManualList(4330) - --- 220122316:38.005281 Version=C:\Users\RSEETH~1\AppData\Local\Temp\7zS18DD.tmp\CVSysDiscoveryUI.exe (Windows:x64, F=11.80.70.28569, P=11.0.0.0, PB=10.2017.0130.1503-UPDB11-2)
